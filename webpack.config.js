@@ -8,6 +8,20 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/static/'
     },
+    devServer: {
+        proxy: {
+            '/**': {
+                target: '/index.html',
+                secure: false,
+                bypass: function(req, res, opt) {
+                    if(req.path.indexOf('.css') !== 1) {
+                        return '/'
+                    }
+                    return '/index.html'
+                }
+            }
+        }
+    },
     module: {
         loaders: [
             {

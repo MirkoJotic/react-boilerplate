@@ -8,6 +8,7 @@
     "lint:js": "./node_modules/.bin/eslint src/ webpack.*.js --cache",
     "test": "TODO"
   },
+  "repository": "https://github.com/MirkoJotic/react-boilerplate",
   "author": "joticmirko@gmail.com",
   "license": "MIT",
   "devDependencies": {
@@ -24,6 +25,8 @@
   },
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   }
 }
