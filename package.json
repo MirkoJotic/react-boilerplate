@@ -4,7 +4,8 @@
   "description": "none",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --colors --inline --hot",
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --colors --inline --hot",
+    "build": "./node_modules/.bin/webpack --env=prod --config webpack.prod.config.js --colors --progress --profile",
     "lint": "./node_modules/.bin/eslint src/",
     "lint:js": "./node_modules/.bin/eslint src/ webpack.*.js --cache",
     "test": "TODO"
