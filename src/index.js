@@ -40,3 +40,7 @@ render(
     <Root/>,
     rootEl
 )
+
+if(module.hot) {
+    module.hot.accept()
+}

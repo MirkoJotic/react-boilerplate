@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: resolve(__dirname, 'static'),
         filename: 'bundle.js',
-        publicPath: '/static/'
+        publicPath: 'http://localhost:8080/static/'
     },
     devServer: {
         proxy: {
@@ -38,7 +38,7 @@ module.exports = {
                 loader: 'babel-loader',
                 include: resolve(__dirname, 'src'),
                 query: {
-                    presets: ['es2015', 'react', 'react-hmre']
+                    presets: ['react-hmre']
                 }
             }
         ]
